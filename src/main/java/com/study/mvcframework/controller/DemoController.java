@@ -23,6 +23,7 @@ public class DemoController {
     public void queryUserInfo(HttpServletRequest req, Integer id, HttpServletResponse resp) throws IOException {
         System.out.println("test git conflict");
         System.out.println("what how why?");
+        System.out.println("may i help you?");
         resp.getWriter().print(demoService.queryUserInfoById(id).toString());
     }
 
