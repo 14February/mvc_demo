@@ -21,6 +21,7 @@ public class DemoController {
     @Security({"1", "2"})
     @RequestMapping("user")
     public void queryUserInfo(HttpServletRequest req, Integer id, HttpServletResponse resp) throws IOException {
+        System.out.println("test git conflict");
         resp.getWriter().print(demoService.queryUserInfoById(id).toString());
     }
 
