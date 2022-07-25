@@ -41,6 +41,8 @@ public class MvcDispatchServlet extends HttpServlet {
     @Override
     public void init(ServletConfig config) throws ServletException {
 
+        String bilibili = "bilibili";
+
         // 1、加载配置文件
         doLoadProperties(config.getInitParameter("contextConfigLocation"));
         // 2、扫描配置文件中字节码文件路径，得到全类名
