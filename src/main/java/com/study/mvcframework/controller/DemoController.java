@@ -26,6 +26,7 @@ public class DemoController {
         resp.getWriter().print(demoService.queryUserInfoById(id).toString());
         System.out.println("test");
         System.out.println("i'am dev");
+        System.out.println("i'am dev2");
     }
 
 }
